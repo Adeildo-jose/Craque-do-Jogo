@@ -158,8 +158,11 @@ class UI:
             if sombra:
                 s  = f.render(txt, True, PRETO)
                 rs = s.get_rect()
-                rs.centerx = x if centralizar else x + sombra_offset
-                rs.y       = y + sombra_offset
+                if centralizar:
+                    rs.centerx = x
+                else:
+                    rs.x = x + sombra_offset
+                rs.y = y + sombra_offset
                 self.screen.blit(s, rs)
             surf = f.render(txt, True, cor)
             r    = surf.get_rect()
