@@ -32,10 +32,9 @@ A ambientação é totalmente imersiva: um estádio noturno animado com torcida,
 
 | | |
 |:-:|:-:|
-| ![Tela 1](https://raw.githubusercontent.com/DaviDGuarana/Craque-do-Jogo-main/main/assets/screenshots/screenshot1.png) | ![Tela 2](https://raw.githubusercontent.com/DaviDGuarana/Craque-do-Jogo-main/main/assets/screenshots/screenshot2.png) |
-| ![Tela 3](https://raw.githubusercontent.com/DaviDGuarana/Craque-do-Jogo-main/main/assets/screenshots/screenshot3.png) | ![Tela 4](https://raw.githubusercontent.com/DaviDGuarana/Craque-do-Jogo-main/main/assets/screenshots/screenshot4.png) |
-
-> 💡 Para adicionar os prints: crie a pasta `assets/screenshots/` no repositório, coloque as imagens com os nomes acima e suba com `git push`. Os links já estão configurados.
+| ![Menu](https://raw.githubusercontent.com/DaviDGuarana/Craque-do-Jogo-main/main/assets/screenshots/Menu.png) | ![Tela de pergunta](https://raw.githubusercontent.com/DaviDGuarana/Craque-do-Jogo-main/main/assets/screenshots/Tela%20de%20pergunta.png) |
+| ![Cartão Amarelo](https://raw.githubusercontent.com/DaviDGuarana/Craque-do-Jogo-main/main/assets/screenshots/Cart%C3%A3o%20amarelo.png) | ![Cartão Vermelho](https://raw.githubusercontent.com/DaviDGuarana/Craque-do-Jogo-main/main/assets/screenshots/Cart%C3%A3o%20vermelho.png) |
+| ![Ranking](https://raw.githubusercontent.com/DaviDGuarana/Craque-do-Jogo-main/main/assets/screenshots/Ranking.png) | |
 
 -----
 
@@ -143,7 +142,8 @@ quiz-do-craque/
     ├── cacaRato.png     # Imagem do jogador — Fase 2
     ├── magrao.png       # Imagem do jogador — Fase 3
     ├── neymar.png       # Imagem do jogador — Fase 4
-    └── pele.png         # Imagem do jogador — Fase 5
+    ├── pele.png         # Imagem do jogador — Fase 5
+    └── screenshots/     # Capturas de tela do jogo
 ```
 
 -----
