@@ -1,6 +1,4 @@
-"""
-entities.py – Classes de dados do jogo: Pergunta, Fase, TextoAnimado, Particula
-"""
+from __future__ import annotations
 
 import pygame
 import random
@@ -8,9 +6,7 @@ import os
 from constants import *
 
 
-# ─────────────────────────────────────────────────────────
-#  CLASSE: Pergunta
-# ─────────────────────────────────────────────────────────
+
 class Pergunta:
     def __init__(self, texto: str, opcoes: list, resposta_idx: int):
         self.texto       = texto
@@ -21,11 +17,7 @@ class Pergunta:
         return idx == self.resposta_idx
 
 
-# ─────────────────────────────────────────────────────────
-#  CLASSE: Fase
-# ─────────────────────────────────────────────────────────
 class Fase:
-    """Encapsula dados e estado de uma fase do quiz."""
 
     def __init__(self, data: dict):
         self.jogador          = data["jogador"]
@@ -39,10 +31,12 @@ class Fase:
         self._imagem_original = None
         self._carregar_imagem()
 
-        self.perguntas     = [
+        banco = [
             Pergunta(p["pergunta"], p["opcoes"], p["resposta"])
             for p in data["perguntas"]
         ]
+        qtd = min(4, len(banco))
+        self.perguntas     = random.sample(banco, qtd)
         self.pergunta_atual = 0
         self.acertos        = 0
         self.erros          = 0
@@ -56,7 +50,6 @@ class Fase:
                 print(f"[AVISO] Não carregou imagem {self.imagem_path}: {e}")
 
     def get_imagem(self, altura_alvo: int = 220) -> pygame.Surface | None:
-        """Retorna a imagem redimensionada mantendo proporção."""
         if self._imagem_original is None:
             return None
         ow, oh = self._imagem_original.get_size()
@@ -64,7 +57,6 @@ class Fase:
         nw, nh  = int(ow * fator), int(oh * fator)
         return pygame.transform.scale(self._imagem_original, (nw, nh))
 
-    # ── Lógica ──────────────────────────────────────────
     def proxima_pergunta(self) -> Pergunta | None:
         if self.pergunta_atual < len(self.perguntas):
             return self.perguntas[self.pergunta_atual]
@@ -86,12 +78,9 @@ class Fase:
         return self.pergunta_atual >= len(self.perguntas)
 
     def aprovado(self) -> bool:
-        return self.acertos >= 3   # 3 de 4
+        return self.acertos >= 3
 
 
-# ─────────────────────────────────────────────────────────
-#  CLASSE: TextoAnimado
-# ─────────────────────────────────────────────────────────
 class TextoAnimado:
     def __init__(self, texto: str, velocidade: int = 2):
         self.texto_completo  = texto
@@ -115,9 +104,6 @@ class TextoAnimado:
         self.chars_mostrados = len(self.texto_completo)
 
 
-# ─────────────────────────────────────────────────────────
-#  CLASSE: Particula
-# ─────────────────────────────────────────────────────────
 class Particula:
     def __init__(self, x: int, y: int, cor: tuple, acerto: bool = True):
         self.x        = x

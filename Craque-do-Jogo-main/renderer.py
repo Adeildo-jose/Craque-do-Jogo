@@ -1,6 +1,4 @@
-"""
-renderer.py – Classes de renderização: UI (texto, caixas) e Estadio (cenário).
-"""
+from __future__ import annotations
 
 import pygame
 import random
@@ -10,11 +8,6 @@ from constants import *
 
 
 def _carregar_fonte_emoji() -> pygame.font.Font | None:
-    """
-    Tenta carregar uma fonte do sistema com suporte a emojis/Unicode.
-    Ordem de preferência: Segoe UI Emoji (Win) → Apple Color Emoji (Mac)
-    → Noto Color Emoji / Symbola (Linux) → None (sem suporte).
-    """
     candidatas = [
         # Windows
         "segoeuiemoji", "seguiemj",
@@ -158,11 +151,8 @@ class UI:
             if sombra:
                 s  = f.render(txt, True, PRETO)
                 rs = s.get_rect()
-                if centralizar:
-                    rs.centerx = x
-                else:
-                    rs.x = x + sombra_offset
-                rs.y = y + sombra_offset
+                rs.centerx = x if centralizar else x + sombra_offset
+                rs.y       = y + sombra_offset
                 self.screen.blit(s, rs)
             surf = f.render(txt, True, cor)
             r    = surf.get_rect()

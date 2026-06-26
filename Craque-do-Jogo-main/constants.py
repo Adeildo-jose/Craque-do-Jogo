@@ -1,6 +1,11 @@
-"""
-constants.py – Paleta de cores e constantes globais do Quiz do Craque
-"""
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+
+def asset_path(*partes: str) -> str:
+    return os.path.join(BASE_DIR, "assets", *partes)
+
 
 # ── JANELA ──────────────────────────────────────────────
 LARGURA  = 900
@@ -34,9 +39,10 @@ CINZA_MEDIO  = (100, 100, 120)
 # ── ESTADOS DO JOGO ─────────────────────────────────────
 MENU          = "menu"
 SELECAO_FASES = "selecao_fases"
-INTRO_FASE = "intro_fase"
-PERGUNTA   = "pergunta"
-FEEDBACK   = "feedback"
-RESULTADO  = "resultado"
-VITORIA    = "vitoria"
-GAME_OVER  = "game_over"
+INTRO_FASE    = "intro_fase"
+PERGUNTA      = "pergunta"
+FEEDBACK      = "feedback"
+RESULTADO     = "resultado"
+VITORIA       = "vitoria"
+GAME_OVER     = "game_over"
+LEADERBOARD   = "leaderboard"

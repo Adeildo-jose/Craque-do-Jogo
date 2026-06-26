@@ -28,6 +28,17 @@ A ambientação é totalmente imersiva: um estádio noturno animado com torcida,
 
 -----
 
+## 📸 Screenshots
+
+| | |
+|:-:|:-:|
+| ![Tela 1](https://raw.githubusercontent.com/DaviDGuarana/Craque-do-Jogo-main/main/assets/screenshots/screenshot1.png) | ![Tela 2](https://raw.githubusercontent.com/DaviDGuarana/Craque-do-Jogo-main/main/assets/screenshots/screenshot2.png) |
+| ![Tela 3](https://raw.githubusercontent.com/DaviDGuarana/Craque-do-Jogo-main/main/assets/screenshots/screenshot3.png) | ![Tela 4](https://raw.githubusercontent.com/DaviDGuarana/Craque-do-Jogo-main/main/assets/screenshots/screenshot4.png) |
+
+> 💡 Para adicionar os prints: crie a pasta `assets/screenshots/` no repositório, coloque as imagens com os nomes acima e suba com `git push`. Os links já estão configurados.
+
+-----
+
 ## 🏟️ Fases
 
 Cada fase apresenta um jogador icônico e 4 perguntas temáticas. Para ser aprovado e avançar, o jogador precisa acertar ao menos **3 das 4 perguntas**. Erros são punidos com cartões — ao levar o segundo cartão (vermelho), a fase é reiniciada.
@@ -52,6 +63,28 @@ O jogo usa um sistema de cartões inspirado no futebol real:
 - **Acertar uma pergunta** → o cartão amarelo é removido, voltando para limpo
 
 O sistema de cartões reseta ao começar (ou recomeçar) cada fase.
+
+-----
+
+## ⏱️ Timer e Pontuação por Tempo
+
+Cada pergunta tem um tempo limite de **15 segundos**. A pontuação obtida ao acertar diminui conforme o tempo passa — quanto mais rápido o jogador responder, mais pontos ele ganha.
+
+| Fase | Pontuação máxima | Desconto | Pontuação mínima |
+|------|-----------------|----------|-----------------|
+| 1    | 10 pts          | -1 pt/s  | 1 pt            |
+| 2    | 20 pts          | -1 pt/s  | 1 pt            |
+| 3    | 30 pts          | -1 pt/s  | 1 pt            |
+| 4    | 40 pts          | -1 pt/s  | 1 pt            |
+| 5    | 50 pts          | -1 pt/s  | 1 pt            |
+
+> A barra do timer muda de cor (verde → amarelo → vermelho) e exibe em tempo real quantos pontos você vai ganhar se responder naquele instante.
+
+-----
+
+## 🏆 Ranking
+
+Ao final de cada partida, a pontuação é registrada no ranking local. A tela de ranking exibe os **melhores jogadores** da sessão, incentivando a competição por tempo de resposta e precisão.
 
 -----
 
@@ -168,6 +201,9 @@ MENU → SELECAO_FASES → INTRO_FASE → PERGUNTA ⇄ FEEDBACK → RESULTADO
 - ⭐ Registro de fases aprovadas na sessão
 - 🖋️ Animação de texto tipo máquina de escrever na intro
 - 🏆 Tela de vitória com confete animado
+- ⏱️ Timer de 15 segundos por pergunta com barra visual colorida
+- ⚡ Pontuação dinâmica — responder rápido vale mais pontos
+- 📊 Ranking de melhores pontuações
 
 -----
 

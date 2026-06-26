@@ -2,6 +2,7 @@
 
 import pygame
 import sys
+import traceback
 from game import Jogo
 
 def main():
@@ -13,6 +14,10 @@ def main():
         jogo.run()
     except KeyboardInterrupt:
         pass
+    except Exception:
+        traceback.print_exc()
+        print("\n[ERRO] O jogo encontrou um problema e foi encerrado.")
+        input("Pressione ENTER para fechar...")
     finally:
         pygame.quit()
         sys.exit()
