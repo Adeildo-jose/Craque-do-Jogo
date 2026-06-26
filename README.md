@@ -1,9 +1,9 @@
 # Craque-do-Jogo
 
-<h1 align="center">⚽ Quiz do Craque</h1>
+<h1 align="center">⚽ Craque do Jogo</h1>
 
 <p align="center">
-  <img src="assets/bola_menu.png" alt="Bola do Quiz do Craque" width="120"/>
+  <img src="assets/bola_menu.png" alt="Bola do Craque do Jogo" width="120"/>
 </p>
 
 <p align="center">
@@ -22,7 +22,7 @@
 
 ## 🎮 Sobre o Jogo
 
-**Quiz do Craque** é um jogo de perguntas e respostas temático de futebol, desenvolvido em Python com a biblioteca Pygame. O jogador avança por 5 fases, cada uma dedicada a um craque lendário do futebol, respondendo perguntas sobre regras, história e curiosidades do esporte.
+**Craque do Jogo** é um jogo de perguntas e respostas temático de futebol, desenvolvido em Python com a biblioteca Pygame. O jogador avança por 5 fases, cada uma dedicada a um craque lendário do futebol, respondendo perguntas sobre regras, história e curiosidades do esporte.
 
 A ambientação é totalmente imersiva: um estádio noturno animado com torcida, holofotes, grama listrada e placar, tudo desenhado em tempo real com Pygame.
 
