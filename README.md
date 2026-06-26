@@ -32,9 +32,9 @@ A ambientação é totalmente imersiva: um estádio noturno animado com torcida,
 
 | | |
 |:-:|:-:|
-| ![Menu](https://raw.githubusercontent.com/DaviDGuarana/Craque-do-Jogo-main/main/assets/screenshots/Menu.png) | ![Tela de pergunta](https://raw.githubusercontent.com/DaviDGuarana/Craque-do-Jogo-main/main/assets/screenshots/Tela%20de%20pergunta.png) |
-| ![Cartão Amarelo](https://raw.githubusercontent.com/DaviDGuarana/Craque-do-Jogo-main/main/assets/screenshots/Cart%C3%A3o%20amarelo.png) | ![Cartão Vermelho](https://raw.githubusercontent.com/DaviDGuarana/Craque-do-Jogo-main/main/assets/screenshots/Cart%C3%A3o%20vermelho.png) |
-| ![Ranking](https://raw.githubusercontent.com/DaviDGuarana/Craque-do-Jogo-main/main/assets/screenshots/Ranking.png) | |
+| ![Menu](https://raw.githubusercontent.com/Adeildo-jose/Craque-do-Jogo/main/assets/screenshots/Menu.png) | ![Tela de pergunta](https://raw.githubusercontent.com/Adeildo-jose/Craque-do-Jogo/main/assets/screenshots/Tela%20de%20pergunta.png) |
+| ![Cartão Amarelo](https://raw.githubusercontent.com/Adeildo-jose/Craque-do-Jogo/main/assets/screenshots/Cart%C3%A3o%20amarelo.png) | ![Cartão Vermelho](https://raw.githubusercontent.com/Adeildo-jose/Craque-do-Jogo/main/assets/screenshots/Cart%C3%A3o%20vermelho.png) |
+| ![Ranking](https://raw.githubusercontent.com/Adeildo-jose/Craque-do-Jogo/main/assets/screenshots/Ranking.png) | |
 
 -----
 
