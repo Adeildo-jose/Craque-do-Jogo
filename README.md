@@ -28,6 +28,18 @@ A ambientação é totalmente imersiva: um estádio noturno animado com torcida,
 
 -----
 
+## 🆕 Features - 3VA
+
+Estas funcionalidades foram desenvolvidas e adicionadas na segunda entrega do projeto:
+
+- 🃏 **Cartão amarelo e vermelho na tela de erro** — ao errar uma pergunta, o cartão correspondente aparece na tela com animação de entrada, igual ao futebol real
+- ⏱️ **Tempo para responder as perguntas** — cada pergunta tem um limite de 15 segundos, exibido por uma barra visual que muda de cor conforme o tempo passa
+- ⚡ **Pontuação com base na velocidade de resposta** — quanto mais rápido o jogador responder, mais pontos ganha; o valor atual é exibido em tempo real na barra do timer
+- 🏆 **Ranking de melhores pontuações** — ao final da partida, a pontuação é registrada e exibida na tela de recordes
+- 📝 **Mais perguntas no banco de dados** — o banco de perguntas foi expandido, aumentando a variedade e o desafio em cada fase
+
+-----
+
 ## 📸 Screenshots
 
 | | |
